@@ -1,0 +1,123 @@
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --red: #ff2b34;
+            --black: #222;
+            --white: #fff;
+            --texto: 'Open Sans', sans-serif;
+        }
+        
+        a,
+        p {
+            font-family: var(--texto)
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: var(--texto);
+        }
+        /* Fim das configurações padrões */
+        
+        .criar_eventos__filho1 {
+            width: 40%;
+            height: 400px;
+            position: absolute;
+            top: 15em;
+            display: flex;
+        }
+        
+        .criar_eventos__filho2 {
+            width: 50%;
+            height: 300px;
+            position: absolute;
+            left: 50em;
+            top: 15em;
+            /* background: green; */
+        }
+        
+        .criar_eventos__pai {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        
+        .criar_eventos__filho2 {
+            width: 50px;
+            float: left;
+        }
+        
+        .criar_eventos__filho2 input,
+        select {
+            background-color: var(--white);
+            color: var(--black);
+            padding: 16px;
+            width: 28em;
+            border: none;
+            font-size: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+            -webkit-appearance: button;
+            appearance: button;
+            outline: none;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+        
+        .criar_eventos__filho1 label {
+            font-size: 360px;
+            margin: auto;
+        }
+        
+        .criar_eventos__input_none {
+            display: none
+        }
+        
+        .criar_eventos__botao {
+            background-color: var(--red);
+            border: none;
+            color: var(--white);
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 1.5em;
+        }
+        
+        .criar_eventos__filho1 input {
+            display: none
+        }
+        
+        @media screen and (max-width: 769px) {
+            /* tablet */
+            .criar_eventos__filho1 {
+                display: none
+            }
+            .criar_eventos__filho2 {
+                left: 0em;
+                top: 0em;
+                position: relative;
+            }
+            .criar_eventos__input_none {
+                display: block
+            }
+            .criar_eventos__input_none {
+                border: none;
+            }
+        }
+        
+        @media screen and (max-width: 376px) {
+            /* mobile */
+            .criar_eventos__filho2 input,
+            select {
+                width: 15em;
+            }
+            .criar_eventos__filho1 {}
+        }
